@@ -1,0 +1,25 @@
+{
+  "name": "john-n-jill-wedding",
+  "version": "1.0.0",
+  "description": "An invitation to Erice John and Mary Jill wedding ceremony.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillow2-dev/john-n-jill-wedding.git"
+  },
+  "keywords": [],
+  "author": "pillow2-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pillow2-dev/john-n-jill-wedding/issues"
+  },
+  "homepage": "https://github.com/pillow2-dev/john-n-jill-wedding#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.80.6"
+  }
+}
