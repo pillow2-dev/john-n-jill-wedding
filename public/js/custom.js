@@ -42,4 +42,11 @@ $(document).ready(function () {
       }
     );
   });
+
+  $("#main_nav .offcanvas-body a").on("click", function () {
+    var offcanvas = bootstrap.Offcanvas.getInstance(
+      document.getElementById("offcanvasNavigation")
+    );
+    offcanvas.hide(); // Close the offcanvas
+  });
 });

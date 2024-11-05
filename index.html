@@ -73,20 +73,10 @@
     data-bs-target="#main_nav"
     data-bs-offset="50"
   >
-    <!-- Hidden audio element -->
-    <!-- <div class="audio-autoplay" hidden>
-      <audio id="background-audio" autoplay loop>
-        <source src="admin/audio/themesong.ogg" type="audio/ogg" />
-        <source src="admin/audio/themesong.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-    </div> -->
-    <!-- /Hidden audio element -->
-
     <!-- Header -->
     <header id="Home" class="text-bg-dark">
       <div class="bg-cover-fixed hero-cover text-light">
-        <span class="hero-overlay-dark"></span>
+        <span class="bg-overlay-dark"></span>
         <div class="bg-cover-content">
           <nav
             id="main_nav"
@@ -113,23 +103,23 @@
                 class="btn d-block d-lg-none"
                 type="button"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasResponsive"
-                aria-controls="offcanvasResponsive"
+                data-bs-target="#offcanvasNavigation"
+                aria-controls="offcanvasNavigation"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div
                 class="offcanvas-lg offcanvas-end"
                 tabindex="-1"
-                id="offcanvasResponsive"
-                aria-labelledby="offcanvasResponsiveLabel"
+                id="offcanvasNavigation"
+                aria-labelledby="offcanvasNavigationLabel"
               >
                 <div class="offcanvas-header">
                   <button
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
-                    data-bs-target="#offcanvasResponsive"
+                    data-bs-target="#offcanvasNavigation"
                     aria-label="Close"
                   ></button>
                 </div>
@@ -223,7 +213,7 @@
         class="bg-cover-fixed text-dark"
         style="background-image: url(public/img/inside-structure.webp)"
       >
-        <span class="hero-overlay-light" style="opacity: 0.9"></span>
+        <span class="bg-overlay-light" style="opacity: 0.9"></span>
         <div class="bg-cover-content">
           <div class="container py-4">
             <h1 class="display-4 text-warning text-center mb-5">Ceremony</h1>
