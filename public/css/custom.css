@@ -19,23 +19,23 @@ Set background-image on inline css
 .hero-cover {
   min-height: 100vh;
   background-image: url(../img/foto-pettine-IfjHaIoAoqE-unsplash-h.jpg);
+  z-index: 1030;
 }
 
-span[class^="hero-overlay-"] {
+span[class^="bg-overlay-"] {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   opacity: 0.5;
-  z-index: 1;
 }
 
-span.hero-overlay-dark {
+span.bg-overlay-dark {
   background-color: black !important;
 }
 
-span.hero-overlay-light {
+span.bg-overlay-light {
   background-color: white !important;
 }
 
