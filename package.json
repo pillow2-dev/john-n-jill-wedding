@@ -2,9 +2,11 @@
   "name": "john-n-jill-wedding",
   "version": "1.0.0",
   "description": "An invitation to Erice John and Mary Jill wedding ceremony.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass public/scss/custom.scss public/css/style.css",
+    "watch-css": "sass --watch public/scss/custom.scss public/css/style.css"
   },
   "repository": {
     "type": "git",
