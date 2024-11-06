@@ -8,6 +8,16 @@ $(window).on("load scroll", function () {
   }
 });
 
+$(window).on("load", function () {
+  setTimeout(removeLoader, 100);
+});
+
+function removeLoader() {
+  $("#loading_overlay").fadeOut(800, function () {
+    $("#loading_overlay").remove();
+  });
+}
+
 $(document).ready(function () {
   $('[data-trigger="copy-text"]')
     .attr("data-bs-container", "body")

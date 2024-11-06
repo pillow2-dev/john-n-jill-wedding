@@ -73,526 +73,568 @@
     data-bs-target="#main_nav"
     data-bs-offset="50"
   >
-    <!-- Header -->
-    <header id="Home" class="text-bg-dark">
-      <div class="bg-cover-fixed hero-cover text-light">
-        <span class="bg-overlay-dark"></span>
-        <div class="bg-cover-content">
-          <nav
-            id="main_nav"
-            class="navbar navbar-expand-lg navbar-dark"
-            data-bs-theme="dark"
-          >
+    <div id="loading_overlay" class="text-bg-light">
+      <figure class="loading_object">
+        <img
+          loading="lazy"
+          decoding="async"
+          width="150"
+          height="150"
+          src="public/img/logo-yellow.png"
+          alt="Loading..."
+          srcset="
+            public/img/logo-yellow.png         500w,
+            public/img/logo-yellow-300x300.png 300w,
+            public/img/logo-yellow-150x150.png 150w
+          "
+          sizes="(max-width: 500px) 100vw, 500px"
+        />
+      </figure>
+    </div>
+
+    <div id="global_wrapper">
+      <!-- Header -->
+      <header id="Home" class="text-bg-dark">
+        <div class="bg-cover-fixed hero-cover text-light">
+          <span class="bg-overlay-dark"></span>
+          <div class="bg-cover-content">
+            <nav
+              id="main_nav"
+              class="navbar navbar-expand-lg navbar-dark"
+              data-bs-theme="dark"
+            >
+              <div class="container">
+                <a href="./" class="navbar-brand">
+                  <img
+                    width="64"
+                    height="64"
+                    src="public/img/logo-light.png"
+                    alt="Erice John &amp; Mary Jill"
+                    decoding="async"
+                    srcset="
+                      public/img/logo-light.png         500w,
+                      public/img/logo-light-300x300.png 300w,
+                      public/img/logo-light-150x150.png 150w
+                    "
+                    sizes="(max-width: 64px) 100vw, 64px"
+                  />
+                </a>
+                <button
+                  class="btn d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasResponsive"
+                  aria-controls="offcanvasResponsive"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas-lg offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasResponsive"
+                  aria-labelledby="offcanvasResponsiveLabel"
+                >
+                  <div class="offcanvas-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      data-bs-target="#offcanvasResponsive"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav text-end">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Ceremony">Ceremony</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Reception">Reception</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Entourage">Entourage</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#RSVP">RSVP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Attire">Attire</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Notes">Notes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Social">Social</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
             <div class="container">
-              <a href="./" class="navbar-brand">
-                <img
-                  width="64"
-                  height="64"
-                  src="public/img/logo-light.png"
-                  alt="Erice John &amp; Mary Jill"
-                  decoding="async"
-                  srcset="
-                    public/img/logo-light.png         500w,
-                    public/img/logo-light-300x300.png 300w,
-                    public/img/logo-light-150x150.png 150w
-                  "
-                  sizes="(max-width: 64px) 100vw, 64px"
-                />
-              </a>
-              <button
-                class="btn d-block d-lg-none"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavigation"
-                aria-controls="offcanvasNavigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div
-                class="offcanvas-lg offcanvas-end"
-                tabindex="-1"
-                id="offcanvasNavigation"
-                aria-labelledby="offcanvasNavigationLabel"
-              >
-                <div class="offcanvas-header">
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    data-bs-target="#offcanvasNavigation"
-                    aria-label="Close"
-                  ></button>
+              <div class="d-flex flex-column align-items-center">
+                <h1 class="hero-title text-center lh-1 my-5">
+                  Erice John
+                  <br />
+                  -&-
+                  <br />
+                  Mary Jill
+                </h1>
+                <p class="fs-5 text-uppercase text-center">
+                  We Invite You to Our Wedding Celebration
+                </p>
+                <p class="fs-5 text-uppercase text-center">
+                  On 30th day of December, 2024
+                </p>
+                <div class="countdown-parent mb-5">
+                  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                  <a
+                    onclick="return false"
+                    href="https://logwork.com/countdown-hg1g"
+                    class="countdown-timer"
+                    data-style="circles"
+                    data-timezone="Asia/Manila"
+                    data-textcolor="#ffffff"
+                    data-date="2024-12-30 15:00"
+                    data-background="#e6b000"
+                    data-digitscolor="#ffffff"
+                    data-unitscolor="#ffffff"
+                    >&nbsp;</a
+                  >
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav text-end">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Ceremony">Ceremony</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Reception">Reception</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Entourage">Entourage</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#RSVP">RSVP</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Attire">Attire</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Notes">Notes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#Social">Social</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="container">
-            <div class="d-flex flex-column align-items-center">
-              <h1 class="hero-title text-center lh-1 my-5">
-                Erice John
-                <br />
-                -&-
-                <br />
-                Mary Jill
-              </h1>
-              <p class="fs-4 text-uppercase text-center">
-                We Invite You to Our Wedding Celebration
-              </p>
-              <p class="fs-5 text-uppercase text-center">
-                On 30th day of December, 2024
-              </p>
-              <div class="countdown-parent mb-5">
-                <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                <a
-                  onclick="return false"
-                  href="https://logwork.com/countdown-hg1g"
-                  class="countdown-timer"
-                  data-style="circles"
-                  data-timezone="Asia/Manila"
-                  data-textcolor="#ffffff"
-                  data-date="2024-12-30 15:00"
-                  data-background="#e6b000"
-                  data-digitscolor="#ffffff"
-                  data-unitscolor="#ffffff"
-                  >&nbsp;</a
-                >
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- /Header -->
+      </header>
+      <!-- /Header -->
 
-    <!-- Main Content -->
-    <main>
-      <!-- Quoute -->
-      <section class="text-bg-dark">
-        <div class="container py-4">
-          <h3
-            class="is-style-asterisk font-lexend text-uppercase text-center mb-4"
-          >
-            We Loved Because He First Loved Us.
-          </h3>
-          <p class="text-uppercase text-center">1 John 4:19</p>
-        </div>
-      </section>
-      <!-- /Quoute -->
-
-      <!-- Ceremony -->
-      <section
-        id="Ceremony"
-        class="bg-cover-fixed text-dark"
-        style="background-image: url(public/img/inside-structure.webp)"
-      >
-        <span class="bg-overlay-light" style="opacity: 0.9"></span>
-        <div class="bg-cover-content">
+      <!-- Main Content -->
+      <main>
+        <!-- Quoute -->
+        <section class="text-bg-dark">
           <div class="container py-4">
-            <h1 class="display-4 text-warning text-center mb-5">Ceremony</h1>
-            <div class="row">
+            <h3
+              class="is-style-asterisk font-lexend text-uppercase text-center mb-4"
+            >
+              We Loved Because He First Loved Us.
+            </h3>
+            <p class="text-uppercase text-center">1 John 4:19</p>
+          </div>
+        </section>
+        <!-- /Quoute -->
+
+        <!-- Ceremony -->
+        <section
+          id="Ceremony"
+          class="bg-cover-fixed text-dark"
+          style="background-image: url(public/img/inside-structure.webp)"
+        >
+          <span class="bg-overlay-light" style="opacity: 0.9"></span>
+          <div class="bg-cover-content">
+            <div class="container py-4">
+              <h1 class="display-4 text-warning text-center mb-5">Ceremony</h1>
+              <div class="row">
+                <div class="col-md-6">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1285951185287!2d120.97081717414952!3d14.59174737729524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca17d22e6779%3A0x6a3a0ef7daa839d!2sMinor%20Basilica%20and%20Metropolitan%20Cathedral%20of%20the%20Immaculate%20Conception%20-%20Manila%20Cathedral!5e0!3m2!1sen!2sph!4v1730546478228!5m2!1sen!2sph"
+                    width="100%"
+                    height="300"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="border rounded-4"
+                  ></iframe>
+                </div>
+                <div class="col-md-6">
+                  <p class="fs-5"><strong>MANILA CATHEDRAL</strong></p>
+                  <p>Cabildo, 132 Beaterio St., Intramuros Manila</p>
+                  <p>Monday, 30th Day of December, 2024</p>
+                  <p>at 03:00 PM</p>
+                  <a
+                    href="https://maps.app.goo.gl/8Di6h4ZHireqNopk6"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-outline-primary"
+                    >Go To Map</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Ceremony -->
+
+        <!-- Reception -->
+        <section id="Reception" class="text-bg-dark">
+          <div class="container text-center py-4">
+            <h1 class="display-4 is-style-asterisk text-warning mb-4">
+              Reception
+            </h1>
+            <p class="text-uppercase">To Follow At</p>
+            <p class="text-uppercase fs-5">
+              <strong>Baluarte San Diego Garden</strong>
+            </p>
+          </div>
+        </section>
+        <!-- /Reception -->
+
+        <!-- Entourage -->
+        <section id="Entourage" class="text-bg-light py-md-5">
+          <div class="container text-center py-5">
+            <h1 class="display-4 text-warning mb-5">The Wedding Entourage</h1>
+            <div class="my-5">
+              <h2 class="display-5 mb-0">Armas-Marzan</h2>
+              <p class="fs-5"><strong>NUPTIALS</strong></p>
+            </div>
+            <div class="row gy-4 my-5">
               <div class="col-md-6">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1285951185287!2d120.97081717414952!3d14.59174737729524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca17d22e6779%3A0x6a3a0ef7daa839d!2sMinor%20Basilica%20and%20Metropolitan%20Cathedral%20of%20the%20Immaculate%20Conception%20-%20Manila%20Cathedral!5e0!3m2!1sen!2sph!4v1730546478228!5m2!1sen!2sph"
-                  width="100%"
-                  height="300"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  class="border rounded-4"
-                ></iframe>
+                <p class="mb-1">
+                  <small>
+                    <strong>PARENTS OF THE GROOM</strong>
+                  </small>
+                </p>
+                <p class="fs-5 mb-1">✝ MR. JUANITO ARMAS</p>
+                <p class="fs-5 mb-1">✝ MRS. ADELINA ARMAS</p>
               </div>
               <div class="col-md-6">
-                <p class="fs-4"><strong>MANILA CATHEDRAL</strong></p>
-                <p>Cabildo, 132 Beaterio St., Intramuros Manila</p>
-                <p>Monday, 30th Day of December, 2024</p>
-                <p>at 03:00 PM</p>
-                <a
-                  href="https://maps.app.goo.gl/8Di6h4ZHireqNopk6"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline-primary"
-                  >Go To Map</a
-                >
+                <p class="mb-1">
+                  <small>
+                    <strong>PARENTS OF THE BRIDE</strong>
+                  </small>
+                </p>
+                <p class="fs-5 mb-1">MR. MARLON MARZAN</p>
+                <p class="fs-5 mb-1">MRS. MARICEL MARZAN</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Ceremony -->
-
-      <!-- Reception -->
-      <section id="Reception" class="text-bg-dark">
-        <div class="container text-center py-4">
-          <h1 class="display-4 is-style-asterisk text-warning mb-4">
-            Reception
-          </h1>
-          <p class="text-uppercase">To Follow At</p>
-          <p class="text-uppercase fs-4">
-            <strong>Baluarte San Diego Garden</strong>
-          </p>
-        </div>
-      </section>
-      <!-- /Reception -->
-
-      <!-- Entourage -->
-      <section id="Entourage" class="text-bg-light py-md-5">
-        <div class="container text-center py-5">
-          <h1 class="display-4 text-warning mb-5">The Wedding Entourage</h1>
-          <div class="my-5">
-            <h2 class="display-5 mb-0">Armas-Marzan</h2>
-            <p class="fs-4"><strong>NUPTIALS</strong></p>
-          </div>
-          <div class="row gy-4 my-5">
-            <div class="col-md-6">
-              <p class="mb-1">
-                <small>
-                  <strong>PARENTS OF THE GROOM</strong>
-                </small>
-              </p>
-              <p class="fs-4 mb-1">✝ MR. JUANITO ARMAS</p>
-              <p class="fs-4 mb-1">✝ MRS. ADELINA ARMAS</p>
-            </div>
-            <div class="col-md-6">
-              <p class="mb-1">
-                <small>
-                  <strong>PARENTS OF THE BRIDE</strong>
-                </small>
-              </p>
-              <p class="fs-4 mb-1">MR. MARLON MARZAN</p>
-              <p class="fs-4 mb-1">MRS. MARICEL MARZAN</p>
-            </div>
-          </div>
-          <hr />
-          <div class="mt-5 mb-4 my-lg-5">
-            <h2 class="display-5 mb-0">Principal Sponsors</h2>
-            <p>
-              <strong>TO STAND AS WITNESSES IN OUR VOWS</strong>
-            </p>
-          </div>
-          <div class="row my-5">
-            <div class="col-lg-6">
-              <p class="fs-4 mb-1">KGG. RICARDO VILLANUEVA</p>
-              <p class="fs-4 mb-1">KGG. MARLON AQUINO</p>
-              <p class="fs-4 mb-1">DR. ROLAND DELA CRUZ</p>
-              <p class="fs-4 mb-1">MR. ROGELIO ROQUE</p>
-              <p class="fs-4 mb-1">MR. FERDINAND IPANAG</p>
-              <p class="fs-4 mb-1">DR. ROQUE BIGOY JR.</p>
-              <p class="fs-4 mb-1">MR. HENRY DE GUZMAN</p>
-            </div>
-            <div class="col-lg-6">
-              <p class="fs-4 mb-1">DR. MARIA ELMA B. CORDERO</p>
-              <p class="fs-4 mb-1">MRS. NERRIZA MONTANER</p>
-              <p class="fs-4 mb-1">MS. CONSOLACION K. NAANEP</p>
-              <p class="fs-4 mb-1">MRS. ROMINA R. PEREZ</p>
-              <p class="fs-4 mb-1">DR. VERONICA T. YUMOL</p>
-              <p class="fs-4 mb-1">MRS. ALICE GRAFILO</p>
-              <p class="fs-4 mb-1">MRS. MARYLOU CASTOLERO</p>
-            </div>
-          </div>
-          <div class="row gy-4 my-5">
-            <div class="col-md-6">
-              <h2 class="fs-1 mb-0">Best Man</h2>
-              <p class="fs-4 mb-1">JESUS G. VALENCIA JR.</p>
-            </div>
-            <div class="col-md-6">
-              <h2 class="fs-1 mb-0">Maid of Honor</h2>
-              <p class="fs-4 mb-1">RECHEL V. SANGALANG</p>
-            </div>
-          </div>
-          <hr />
-          <div class="mt-5 mb-4 my-lg-5">
-            <h2 class="display-5 mb-0">Secondary Sponsors</h2>
-            <p>
-              <strong>TO ASSIST US IN OUR NEEDS</strong>
-            </p>
-          </div>
-          <div class="row gy-4 my-5">
-            <div class="col-md-6 col-lg-4">
-              <h2 class="fs-1 mb-0">Candle</h2>
-              <p class="mb-1">
-                <small><strong>TO LIGHT OUR PATH</strong></small>
-              </p>
-              <p class="fs-4 mb-1">DENNIS A. EROLES JR.</p>
-              <p class="fs-4 mb-1">ANILEEN ANGORING</p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <h2 class="fs-1 mb-0">Veil</h2>
-              <p class="mb-1">
-                <small><strong>TO CLOTHE US AS ONE</strong></small>
-              </p>
-              <p class="fs-4 mb-1">JAN RALF C. ANTOLIN</p>
-              <p class="fs-4 mb-1">CAMILLE V. SER</p>
-            </div>
-            <div class="col-md-12 col-lg-4">
-              <h2 class="fs-1 mb-0">Gord</h2>
-              <p class="mb-1">
-                <small><strong>TO BIND US TOGETHER</strong></small>
-              </p>
-              <p class="fs-4 mb-1">WENDEL S. CHA</p>
-              <p class="fs-4 mb-1">JANINE P. ALBAO</p>
-            </div>
-          </div>
-          <div class="row gy-4 my-5">
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Groomsmen</h2>
-              <p class="fs-4 mb-1">MARK GIL MARZAN</p>
-              <p class="fs-4 mb-1">MAUIE MARZAN</p>
-              <p class="fs-4 mb-1">RANDY VILLANUEVA JR.</p>
-              <p class="fs-4 mb-1">JAKE Z. BARRERA</p>
-              <p class="fs-4 mb-1">RAJIV MACALLA</p>
-              <p class="fs-4 mb-1">RUSSEL JAMES PE</p>
-              <p class="fs-4 mb-1">JOHN MICHAEL BADEO</p>
-              <p class="fs-4 mb-1">PAOLO DESPABILADERAS</p>
-              <p class="fs-4 mb-1">KARL DENVER BALIDOY</p>
-              <p class="fs-4 mb-1">JUNIE MAR LEGASPI</p>
-              <p class="fs-4 mb-1">MYRJOHN NIANGO</p>
-              <p class="fs-4 mb-1">MIKEL REUBIN GERMAN</p>
-              <p class="fs-4 mb-1">JOHN BENEDICT ANZE</p>
-            </div>
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Bridesmaids</h2>
-              <p class="fs-4 mb-1">CRISTINA JANE C. MARZAN</p>
-              <p class="fs-4 mb-1">STEPHANIE HIGO</p>
-              <p class="fs-4 mb-1">RIA JENELLIE GARCIA</p>
-              <p class="fs-4 mb-1">MITTEL ANN BALBIN</p>
-              <p class="fs-4 mb-1">AIRA DANICA VENTURA</p>
-              <p class="fs-4 mb-1">MERCY BALDOZA</p>
-              <p class="fs-4 mb-1">MARY JANE HIJE</p>
-              <p class="fs-4 mb-1">RHEA MHAY GUEVARRA</p>
-              <p class="fs-4 mb-1">KAYCEE CAROLINE R. REYES</p>
-              <p class="fs-4 mb-1">HOPE AYANNA T. VILLANUEVA</p>
-              <p class="fs-4 mb-1">CHESCA ANGELA AVILA</p>
-              <p class="fs-4 mb-1">NICOLE ANZA</p>
-              <p class="fs-4 mb-1">FAITH IRISH ARMAS</p>
-            </div>
-          </div>
-          <hr />
-          <div class="mt-5 mb-4 my-lg-5">
-            <p class="fs-4">
-              <strong>TO SWEETEN OUR JOURNEY</strong>
-            </p>
-          </div>
-          <div class="row gy-4 my-5">
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Ring Bearer</h2>
-              <p class="mb-1">
-                <small><strong>TO CARRY THE SYMBOL OF OUR LOVE</strong></small>
-              </p>
-              <p class="fs-4 mb-1">RALF YUAN C. ANTOLIN</p>
-            </div>
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Bible Bearer</h2>
-              <p class="mb-1">
-                <small><strong>TO CARRY THE SYMBOL OF OUR FAITH</strong></small>
-              </p>
-              <p class="fs-4 mb-1">ZIAN KURT N. ARMAS</p>
-            </div>
-            <div class="col-lg-12">
-              <h2 class="fs-1 mb-0">Coin Bearer</h2>
-              <p class="mb-1">
+            <hr />
+            <div class="mt-5 mb-4 my-lg-5">
+              <h2 class="display-5 mb-0">Principal Sponsors</h2>
+              <p>
                 <small
-                  ><strong>TO CARRY THE SYMBOL OF OUR TREASURE</strong></small
+                  ><strong>TO STAND AS WITNESSES IN OUR VOWS</strong></small
                 >
               </p>
-              <p class="fs-4 mb-1">ADHIE ALEXIE T. VILLANUEVA</p>
-              <p class="fs-4 mb-1">JHEMUEL JAY A. DE LUNA</p>
             </div>
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Little Bride</h2>
-              <p class="fs-4 mb-1">CZARINNAH REIJ M. ARMAS</p>
+            <div class="row my-5">
+              <div class="col-lg-6">
+                <p class="fs-5 mb-1">KGG. RICARDO VILLANUEVA</p>
+                <p class="fs-5 mb-1">KGG. MARLON AQUINO</p>
+                <p class="fs-5 mb-1">DR. ROLAND DELA CRUZ</p>
+                <p class="fs-5 mb-1">MR. ROGELIO ROQUE</p>
+                <p class="fs-5 mb-1">MR. FERDINAND IPANAG</p>
+                <p class="fs-5 mb-1">DR. ROQUE BIGOY JR.</p>
+                <p class="fs-5 mb-1">MR. HENRY DE GUZMAN</p>
+              </div>
+              <div class="col-lg-6">
+                <p class="fs-5 mb-1">DR. MARIA ELMA B. CORDERO</p>
+                <p class="fs-5 mb-1">MRS. NERRIZA MONTANER</p>
+                <p class="fs-5 mb-1">MS. CONSOLACION K. NAANEP</p>
+                <p class="fs-5 mb-1">MRS. ROMINA R. PEREZ</p>
+                <p class="fs-5 mb-1">DR. VERONICA T. YUMOL</p>
+                <p class="fs-5 mb-1">MRS. ALICE GRAFILO</p>
+                <p class="fs-5 mb-1">MRS. MARYLOU CASTOLERO</p>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <h2 class="fs-1 mb-0">Little Groom</h2>
-              <p class="fs-4 mb-1">MICHAEL AIDEN B. DE BELEN</p>
+            <div class="row gy-4 my-5">
+              <div class="col-md-6">
+                <h2 class="fs-1 mb-0">Best Man</h2>
+                <p class="fs-5 mb-1">JESUS G. VALENCIA JR.</p>
+              </div>
+              <div class="col-md-6">
+                <h2 class="fs-1 mb-0">Maid of Honor</h2>
+                <p class="fs-5 mb-1">RECHEL V. SANGALANG</p>
+              </div>
             </div>
-            <div class="col-12">
-              <h2 class="fs-1 mb-0">Flower Girls</h2>
-              <p class="mb-1">
-                <small><strong>TO SHOWER THE AISLE WITH FLOWERS</strong></small>
+            <hr />
+            <div class="mt-5 mb-4 my-lg-5">
+              <h2 class="display-5 mb-0">Secondary Sponsors</h2>
+              <p>
+                <small><strong>TO ASSIST US IN OUR NEEDS</strong></small>
               </p>
-              <p class="fs-4 mb-1">BLESSIE V. MARZAN</p>
-              <p class="fs-4 mb-1">PRECIOUS JEWEL M. NIANGO</p>
-              <p class="fs-4 mb-1">QUIRA EUNICE D. EMBRADO</p>
-              <p class="fs-4 mb-1">MONICA CLAIRE MARZAN</p>
+            </div>
+            <div class="row gy-4 my-5">
+              <div class="col-md-6 col-lg-4">
+                <h2 class="fs-1 mb-0">Candle</h2>
+                <p class="mb-1">
+                  <small><strong>TO LIGHT OUR PATH</strong></small>
+                </p>
+                <p class="fs-5 mb-1">DENNIS A. EROLES JR.</p>
+                <p class="fs-5 mb-1">ANILEEN ANGORING</p>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <h2 class="fs-1 mb-0">Veil</h2>
+                <p class="mb-1">
+                  <small><strong>TO CLOTHE US AS ONE</strong></small>
+                </p>
+                <p class="fs-5 mb-1">JAN RALF C. ANTOLIN</p>
+                <p class="fs-5 mb-1">CAMILLE V. SER</p>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <h2 class="fs-1 mb-0">Gord</h2>
+                <p class="mb-1">
+                  <small><strong>TO BIND US TOGETHER</strong></small>
+                </p>
+                <p class="fs-5 mb-1">WENDEL S. CHA</p>
+                <p class="fs-5 mb-1">JANINE P. ALBAO</p>
+              </div>
+            </div>
+            <div class="row gy-4 my-5">
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Groomsmen</h2>
+                <p class="fs-5 mb-1">MARK GIL MARZAN</p>
+                <p class="fs-5 mb-1">MAUIE MARZAN</p>
+                <p class="fs-5 mb-1">RANDY VILLANUEVA JR.</p>
+                <p class="fs-5 mb-1">JAKE Z. BARRERA</p>
+                <p class="fs-5 mb-1">RAJIV MACALLA</p>
+                <p class="fs-5 mb-1">RUSSEL JAMES PE</p>
+                <p class="fs-5 mb-1">JOHN MICHAEL BADEO</p>
+                <p class="fs-5 mb-1">PAOLO DESPABILADERAS</p>
+                <p class="fs-5 mb-1">KARL DENVER BALIDOY</p>
+                <p class="fs-5 mb-1">JUNIE MAR LEGASPI</p>
+                <p class="fs-5 mb-1">MYRJOHN NIANGO</p>
+                <p class="fs-5 mb-1">MIKEL REUBIN GERMAN</p>
+                <p class="fs-5 mb-1">JOHN BENEDICT ANZE</p>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Bridesmaids</h2>
+                <p class="fs-5 mb-1">CRISTINA JANE C. MARZAN</p>
+                <p class="fs-5 mb-1">STEPHANIE HIGO</p>
+                <p class="fs-5 mb-1">RIA JENELLIE GARCIA</p>
+                <p class="fs-5 mb-1">MITTEL ANN BALBIN</p>
+                <p class="fs-5 mb-1">AIRA DANICA VENTURA</p>
+                <p class="fs-5 mb-1">MERCY BALDOZA</p>
+                <p class="fs-5 mb-1">MARY JANE HIJE</p>
+                <p class="fs-5 mb-1">RHEA MHAY GUEVARRA</p>
+                <p class="fs-5 mb-1">KAYCEE CAROLINE R. REYES</p>
+                <p class="fs-5 mb-1">HOPE AYANNA T. VILLANUEVA</p>
+                <p class="fs-5 mb-1">CHESCA ANGELA AVILA</p>
+                <p class="fs-5 mb-1">NICOLE ANZA</p>
+                <p class="fs-5 mb-1">FAITH IRISH ARMAS</p>
+              </div>
+            </div>
+            <hr />
+            <div class="mt-5 mb-4 my-lg-5">
+              <p class="fs-5">
+                <strong>TO SWEETEN OUR JOURNEY</strong>
+              </p>
+            </div>
+            <div class="row gy-4 my-5">
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Ring Bearer</h2>
+                <p class="mb-1">
+                  <small
+                    ><strong>TO CARRY THE SYMBOL OF OUR LOVE</strong></small
+                  >
+                </p>
+                <p class="fs-5 mb-1">RALF YUAN C. ANTOLIN</p>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Bible Bearer</h2>
+                <p class="mb-1">
+                  <small
+                    ><strong>TO CARRY THE SYMBOL OF OUR FAITH</strong></small
+                  >
+                </p>
+                <p class="fs-5 mb-1">ZIAN KURT N. ARMAS</p>
+              </div>
+              <div class="col-lg-12">
+                <h2 class="fs-1 mb-0">Coin Bearer</h2>
+                <p class="mb-1">
+                  <small
+                    ><strong>TO CARRY THE SYMBOL OF OUR TREASURE</strong></small
+                  >
+                </p>
+                <p class="fs-5 mb-1">ADHIE ALEXIE T. VILLANUEVA</p>
+                <p class="fs-5 mb-1">JHEMUEL JAY A. DE LUNA</p>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Little Bride</h2>
+                <p class="fs-5 mb-1">CZARINNAH REIJ M. ARMAS</p>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="fs-1 mb-0">Little Groom</h2>
+                <p class="fs-5 mb-1">MICHAEL AIDEN B. DE BELEN</p>
+              </div>
+              <div class="col-12">
+                <h2 class="fs-1 mb-0">Flower Girls</h2>
+                <p class="mb-1">
+                  <small
+                    ><strong>TO SHOWER THE AISLE WITH FLOWERS</strong></small
+                  >
+                </p>
+                <p class="fs-5 mb-1">BLESSIE V. MARZAN</p>
+                <p class="fs-5 mb-1">PRECIOUS JEWEL M. NIANGO</p>
+                <p class="fs-5 mb-1">QUIRA EUNICE D. EMBRADO</p>
+                <p class="fs-5 mb-1">MONICA CLAIRE MARZAN</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /Entourage -->
+        </section>
+        <!-- /Entourage -->
 
-      <!-- RSVP -->
-      <section id="RSVP" class="text-bg-warning">
+        <!-- RSVP -->
+        <section id="RSVP" class="text-bg-warning">
+          <div class="container text-center py-4">
+            <h1 class="display-5 font-lexend font-regular mb-4">RSVP</h1>
+            <div class="rsvp-parent">
+              <iframe
+                data-tally-src="https://tally.so/embed/w2xyRp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="320"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="RSVP1 - Wedding of Erice John & Mary Jill"
+              ></iframe>
+              <script>
+                var d = document,
+                  w = "https://tally.so/widgets/embed.js",
+                  v = function () {
+                    "undefined" != typeof Tally
+                      ? Tally.loadEmbeds()
+                      : d
+                          .querySelectorAll("iframe[data-tally-src]:not([src])")
+                          .forEach(function (e) {
+                            e.src = e.dataset.tallySrc;
+                          });
+                  };
+                if ("undefined" != typeof Tally) v();
+                else if (d.querySelector('script[src="' + w + '"]') == null) {
+                  var s = d.createElement("script");
+                  (s.src = w),
+                    (s.onload = v),
+                    (s.onerror = v),
+                    d.body.appendChild(s);
+                }
+              </script>
+            </div>
+          </div>
+        </section>
+        <!-- /RSVP -->
+
+        <!-- Attire -->
+        <section id="Attire" class="text-bg-light">
+          <div class="container text-center py-4">
+            <h1 class="display-4 is-style-asterisk text-warning mb-4">
+              Attire
+            </h1>
+            <p class="fs-5">
+              Please join us in Formal or
+              <span class="text-nowrap">Semi-formal</span> attire.
+            </p>
+            <p class="text-uppercase fs-5">
+              <strong>STRICTLY BLACK COLOR</strong>
+            </p>
+            <div class="row gy-4 my-5">
+              <div class="col-md-6 col-lg-4 order-1 order-lg-1">
+                <figure class="w-max-24 m-auto">
+                  <img
+                    src="public/img/gents.png"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </figure>
+              </div>
+              <div class="col-lg-4 order-3 order-lg-2">
+                <figure class="w-max-24 m-auto">
+                  <img
+                    src="public/img/filipiniana-barong.png"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </figure>
+              </div>
+              <div class="col-md-6 col-lg-4 order-2 order-lg-3">
+                <figure class="w-max-24 m-auto">
+                  <img
+                    src="public/img/ladies.png"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Attire -->
+
+        <!-- Notes -->
+        <section id="Notes" class="text-bg-light">
+          <div class="container text-center py-4">
+            <h1 class="display-4 text-warning mb-4">Additional Notes</h1>
+            <div class="row gx-md-5 gy-4 my-4">
+              <div class="col-md-6">
+                <h2 class="font-lexend">Gifts</h2>
+                <p class="mx-auto" style="max-width: 30rem">
+                  WITH ALL THAT WE HAVE. WE’VE BEEN TRULY BLESSED. YOUR PRESENCE
+                  AND PRAYERS ARE ALL THAT WE REQUEST. BUT IF YOU DESIRE TO GIVE
+                  NONETHELESS, MONETARY GIFT IS ONE WE SUGGEST.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h2 class="font-lexend">Adults Only</h2>
+                <p class="mx-auto" style="max-width: 30rem">
+                  ALTHOUGH WE LOVE YOUR LITTLE ONES, PLEASE CELEBRATE WITH US AT
+                  AN ADULTS-ONLY RECEPTION IMMEDIATELY FOLLOWING THE CEREMONY.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Notes -->
+
+        <!-- Social -->
+        <section id="Social" class="text-bg-dark">
+          <div class="container text-center py-4">
+            <h1 class="display-4 is-style-asterisk text-warning mb-4">
+              Snap and Share
+            </h1>
+            <p class="fs-5">
+              Help us capture memories on our special day and share it with our
+              hashtag
+            </p>
+            <input
+              type="button"
+              class="btn btn-outline-warning btn-lg fs-3 mt-3 mb-4"
+              value="#EgzitedToMaryJill"
+              data-trigger="copy-text"
+            />
+          </div>
+        </section>
+        <!-- /Social -->
+      </main>
+      <!-- /Main Content -->
+
+      <footer class="text-bg-light">
         <div class="container text-center py-4">
-          <h1 class="display-5 font-lexend font-regular mb-4">RSVP</h1>
-          <div class="rsvp-parent">
-            <iframe
-              data-tally-src="https://tally.so/embed/w2xyRp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          <figure>
+            <img
               loading="lazy"
-              width="100%"
-              height="320"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              title="RSVP1 - Wedding of Erice John & Mary Jill"
-            ></iframe>
-            <script>
-              var d = document,
-                w = "https://tally.so/widgets/embed.js",
-                v = function () {
-                  "undefined" != typeof Tally
-                    ? Tally.loadEmbeds()
-                    : d
-                        .querySelectorAll("iframe[data-tally-src]:not([src])")
-                        .forEach(function (e) {
-                          e.src = e.dataset.tallySrc;
-                        });
-                };
-              if ("undefined" != typeof Tally) v();
-              else if (d.querySelector('script[src="' + w + '"]') == null) {
-                var s = d.createElement("script");
-                (s.src = w),
-                  (s.onload = v),
-                  (s.onerror = v),
-                  d.body.appendChild(s);
-              }
-            </script>
-          </div>
-        </div>
-      </section>
-      <!-- /RSVP -->
-
-      <!-- Attire -->
-      <section id="Attire" class="text-bg-light">
-        <div class="container text-center py-4">
-          <h1 class="display-4 is-style-asterisk text-warning mb-4">Attire</h1>
-          <p>Please join us in Formal or Semi-formal attire.</p>
-          <p class="text-uppercase fs-4">
-            <strong>STRICTLY BLACK COLOR</strong>
+              decoding="async"
+              width="75"
+              height="75"
+              src="public/img/logo-yellow.png"
+              alt=""
+              srcset="
+                public/img/logo-yellow.png         500w,
+                public/img/logo-yellow-300x300.png 300w,
+                public/img/logo-yellow-150x150.png 150w
+              "
+              sizes="(max-width: 500px) 100vw, 500px"
+            />
+          </figure>
+          <p>Erice John Armas and Mary Jill Marzan</p>
+          <p class="text-muted">
+            <small>Designed with <strong>Bootstrap</strong></small>
           </p>
-          <div class="row gy-4 my-5">
-            <div class="col-md-6 col-lg-4 order-1 order-lg-1">
-              <figure class="w-max-24 m-auto">
-                <img src="public/img/gents.png" alt="" class="d-block w-100" />
-              </figure>
-            </div>
-            <div class="col-lg-4 order-3 order-lg-2">
-              <figure class="w-max-24 m-auto">
-                <img
-                  src="public/img/filipiniana-barong.png"
-                  alt=""
-                  class="d-block w-100"
-                />
-              </figure>
-            </div>
-            <div class="col-md-6 col-lg-4 order-2 order-lg-3">
-              <figure class="w-max-24 m-auto">
-                <img src="public/img/ladies.png" alt="" class="d-block w-100" />
-              </figure>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- /Attire -->
-
-      <!-- Notes -->
-      <section id="Notes" class="text-bg-light">
-        <div class="container text-center py-4">
-          <h1 class="display-4 text-warning mb-4">Additional Notes</h1>
-          <div class="row gx-md-5 gy-4 my-4">
-            <div class="col-md-6">
-              <h2 class="font-lexend">Gifts</h2>
-              <p>
-                WITH ALL THAT WE HAVE. WE’VE BEEN TRULY BLESSED. YOUR PRESENCE
-                AND PRAYERS ARE ALL THAT WE REQUEST. BUT IF YOU DESIRE TO GIVE
-                NONETHELESS, MONETARY GIFT IS ONE WE SUGGEST.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h2 class="font-lexend">Adults Only</h2>
-              <p>
-                ALTHOUGH WE LOVE YOUR LITTLE ONES, PLEASE CELEBRATE WITH US AT
-                AN ADULTS-ONLY RECEPTION IMMEDIATELY FOLLOWING THE CEREMONY.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Notes -->
-
-      <!-- Social -->
-      <section id="Social" class="text-bg-dark">
-        <div class="container text-center py-4">
-          <h1 class="display-4 is-style-asterisk text-warning mb-4">
-            Snap and Share
-          </h1>
-          <p class="text-uppercase">
-            Help us capture memories on our special day and share it with our
-            hashtag
-          </p>
-          <input
-            type="button"
-            class="btn btn-outline-warning btn-lg fs-3 mt-3 mb-4"
-            value="#EgzitedToMaryJill"
-            data-trigger="copy-text"
-          />
-        </div>
-      </section>
-      <!-- /Social -->
-    </main>
-    <!-- /Main Content -->
-
-    <footer class="text-bg-light">
-      <div class="container text-center py-4">
-        <figure>
-          <img
-            loading="lazy"
-            decoding="async"
-            width="75"
-            height="75"
-            src="public/img/logo-yellow.png"
-            alt=""
-            srcset="
-              public/img/logo-yellow.png         500w,
-              public/img/logo-yellow-300x300.png 300w,
-              public/img/logo-yellow-150x150.png 150w
-            "
-            sizes="(max-width: 500px) 100vw, 500px"
-          />
-        </figure>
-        <p>Erice John Armas and Mary Jill Marzan</p>
-        <p class="text-muted">
-          <small>Designed with <strong>Bootstrap</strong></small>
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
