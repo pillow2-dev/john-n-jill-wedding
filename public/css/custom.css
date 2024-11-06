@@ -1,3 +1,32 @@
+#loading_overlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+#loading_overlay .loading_object {
+  position: relative;
+  animation-name: loader_pulsing;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.3;
+}
+
+@keyframes loader_pulsing {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*
 Set background-image on inline css
 */
